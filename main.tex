@@ -49,15 +49,15 @@
 
 % Change the colours if you want to
 \definecolor{Orange}{HTML}{FF8C00}
-\definecolor{myBlue}{HTML}{0059FF}
+\definecolor{myRed}{HTML}{ff0000}
 \definecolor{Mulberry}{HTML}{72243D}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{myBlack}{HTML}{000000}
-\colorlet{heading}{Mulberry}
+\colorlet{heading}{myBlack}
 \colorlet{accent}{Orange}
-\colorlet{emphasis}{LightGrey}
-\colorlet{body}{myBlack}
+\colorlet{emphasis}{myBlack}
+\colorlet{body}{LightGrey}
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -72,21 +72,24 @@
 \begin{document}
 
 \name{Fakher HANNAFI}
-\tagline{\textcolor{myBlue}{
-Software Engineer at BPCE Bank || 4x AWS Certified\textsuperscript{\textregistered}
+\tagline{\textcolor{LightGrey}{
+Software Engineer at BPCE Bank || 4x AWS Certified}\textcolor{myBlack}{\textsuperscript{\textregistered}}
+\textcolor{Orange}{
 \begin{tikzpicture}
 \node [cloud, draw,cloud puffs=10,cloud puff arc=120, aspect=2, inner ysep=0.2em] {};
 \end{tikzpicture}
 }}
+
 %% You can add multiple photos on the left or right
 \photoR{3cm}{photo_aws}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
 \personalinfo{
-\item {25 years old} \hspace{16,5mm} \location{Aix En Provence, France}\break
+\item {\textcolor{orange}{\faCircle} 25 Years Old} \hspace{22.7mm} \location{Aix En Provence, France} 
+ \hspace{9,5mm} \phone{+33-7-8491-4455}
   %
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \phone{+33-7-8491-4455}
+ 
   \email{fakher.hannafi@gmail.com}
   \linkedin{linkedin.com/in/fakher-hannafi}
   \github{github.com/fakhrovski}
@@ -112,7 +115,8 @@ Software Engineer at BPCE Bank || 4x AWS Certified\textsuperscript{\textregister
 \begin{paracol}{2}
 \cvsection{Experience}
 
-\cvevent{Software Engineer}{BPCE BANK}{April 2019 -- Ongoing}{Aix En Provence, FRANCE}
+\cvevent{Software Engineer}{\textcolor{myBlack}{BPCE BANK} \hspace{7cm}\includegraphics[width=0.06 \textwidth]{bpce}}{April 2019 -- Ongoing}{}
+
 \begin{itemize}
 \item Project Lead/ Data Architect
 \item Devops Engineer
@@ -121,7 +125,7 @@ Software Engineer at BPCE Bank || 4x AWS Certified\textsuperscript{\textregister
 
 \divider
 
-\cvevent{Software Developer}{ORANGE FRANCE}{May 2018 -- March 2019}{Grenoble, FRANCE}
+\cvevent{Software Developer}{\textcolor{LightGrey}{ORANGE} \hspace{7.8cm}\includegraphics[width=0.02 \textwidth]{orange}}{May 2018 -- March 2019}{}
 \begin{itemize}
 \item Full Stack JS Developer
 \item Devops Engineer
@@ -129,32 +133,34 @@ Software Engineer at BPCE Bank || 4x AWS Certified\textsuperscript{\textregister
 
 \cvsection{Projects}
 
-\cvevent{Industrialize Data Science models in Production}{Project Lead | Data Architect}{Feb 2020 -- Ongoing}{}
+\cvevent{Industrialize Data Science models in Production}{Project Lead/Data Architect}{Feb 2020 -- Ongoing}{}
 \begin{itemize}
 \item Deploy Data Science Models to Production Environments
 \item \textbf{Keywords:} Operational Excellence, Reliability, Monitoring, API/Batch Patterns, CI/CD, Containers
-\item \textbf{Technologies:} Elastic, Openshift, Hortonworks Data Platform, Jfrog Artifactory, Jenkins, Checkmarx, XLDeploy
+\item \textbf{Technologies:} Anaconda, HDP 2.6.5, Artifactory, Elastic, Jenkins, XLR/XLD
 \end{itemize}
 
 \divider
 
-\cvevent{Automation of Internal Processes}{Full Stack Developer | Data Developer}{April 2019 -- Ongoing}{}
+\cvevent{Automation of Processes}{Full Stack Developer | Data Developer}{April 2019 -- Ongoing}{}
 \begin{itemize}
-\item Develop and Deploy intern tools to automate some traditional procedures
+\item Develop intern tools to automate traditional processes
 \item \textbf{Technologies:} Angular 8, Nodejs 10, Oracle 12c, PowerShell, Power BI, Jenkins
 \end{itemize}
 \medskip
 
 \divider
 \cvevent{Data Migration to AWS Cloud}{AWS Cloud Engineer}{October 2019 -- December 2019}{}
-\item QA testing for ingestion, transformation and cataloging cold data in staging environment account  
+\item QA testing for ingestion, transformation and cataloging cold data in the staging environment  
 \item \textbf{Technologies:} S3, Lambda, Athena, Cloudwatch, IAM, STS, SNS
 \medskip
+\newpage
+%\divider
 
-\divider
+\cvevent{Upgrade Big Data Platform to HDP 3.1}{Infrastructure Engineer}{April 2019 -- 
+Ongoing}{}
 \begin{itemize}
-\cvevent{Upgrade Big Data Platform to HDP 3.1}{Infrastructure Engineer}{April 2019 -- Ongoing}{}
-\item \textbf{Keyword:} containerization/virtualization, DRP, Availability, Fault Tolerance, SLA, Power BI, HDP 2.5.6
+\item \textbf{Keyword:} containerization/virtualization, ESX, Filesystem, SAN, Disaster Recovery Plan, Availability, Fault Tolerance, SLA, Power BI, HDP 2.5.6
 \medskip
 \end{itemize}
 
@@ -165,37 +171,23 @@ Software Engineer at BPCE Bank || 4x AWS Certified\textsuperscript{\textregister
 \item \textbf{Keyword:} NodeJS, VueJs, JEST, Bootstrap, Rest API, Websocket, Git, Openshift, Jenkins, Kanban
 \medskip
 
-\cvsection{A Day of My Life}
+\cvsection{Circle of Interests}
 
 % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
 % \wheelchart{outer radius}{inner radius}{
 % comma-separated list of value/text width/color/detail}
 
 \wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{Sleep,\\beautiful sleep},
-  3/8em/accent!40/Hopeful novelist by night,
-  8/8em/accent!60/Daytime job,
-  2/10em/accent/Sports and relaxation,
-  5/6em/accent!20/Spending time with family
+  6/8em/accent!30/{Netflix and Chill},
+  3/8em/accent!40/Networking with AWS Architects,
+  8/8em/accent!60/Table Tennis,
+  2/10em/accent/Coding,
+  5/6em/accent!20/Violin
 }
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
-\newpage
 
-\cvsection{Publications}
-
-\nocite{*}
-
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
@@ -203,45 +195,40 @@ Software Engineer at BPCE Bank || 4x AWS Certified\textsuperscript{\textregister
 
 \cvsection{My Life Philosophy}
 
+
 \begin{quote}
-``The more I live, the more I learn. The more I learn, the more I realizes, the less I know''
+\textcolor{LightGrey}{``The more I live, the more I learn. The more I learn, the more I realize, the less I know''}
 \end{quote}
+
 
 \cvsection{Most Proud of}
 
-\cvachievement{\faTrophy}{AWS Certifications}{DVA, SAA, CLF, SOA}
+\cvachievement{\faTrophy}{Technical Certifications}{}
+\includegraphics[width=0.1 \textwidth]{clf} \includegraphics[width=0.1 \textwidth]{dva} \includegraphics[width=0.1 \textwidth]{saa} \includegraphics[width=0.1 \textwidth]{soa}\\
 
 \divider
 
-\cvachievement{\faTrophy}{National Diploma of music}{Violon, Piano, Percussions}
+\cvachievement{\faTrophy}{Non Technical Certifications}{}
+\includegraphics[width=0.16 \textwidth]{itil} \includegraphics[width=0.06 \textwidth]{psm}
+\hspace{5mm}\includegraphics[width=0.12 \textwidth]{toeic}
 
-\divider
-
-\cvachievement{\faTrophy}{Other Certifications}{ITIL4 on April 2019, Scrum Master PSM at }
-
-\divider
-
+\divider\\
+\cvachievement{\faTrophy}{National Diploma of Music}{Music Teacher, Violin, Piano}
 
 \cvsection{Strengths}
 
 \cvtag{Lifelong Learner} \cvtag{Highly Motivated}\\
 \cvtag{Autonomous} \cvtag{Challenger}
 
-\divider\smallskip
+\divider\smallskip\\
 
-\cvtag{Angular}
-\cvtag{Node.js}
-\cvtag{Python}
-\cvtag{Powershell}
-\cvtag{Bash}
-\cvtag{Latex}
-\cvtag{Groovy}
-\cvtag{Redhat}\\
+\cvtag{Web}\cvtag{Cloud}\cvtag{Data}\cvtag{Devops}\\
 
-\divider\smallskip
+\cvtag{Agile}\cvtag{Scrum}\cvtag{ITIL}\cvtag{ITSM}\\
 
-\cvtag{Cloud Architecture}\cvtag{Data Analytics}\cvtag{CI/CD}\\
-\cvtag{Data Security}
+\divider\smallskip\\
+\cvtag{Angular}\cvtag{Node.js}\cvtag{Python}\cvtag{Powershell}\cvtag{AWS}\cvtag{Jenkins}\cvtag{Ansible}\cvtag{Linux}\cvtag{Docker}\cvtag{Elastic}\cvtag{Oracle}\cvtag{Power BI}\cvtag{Grafana}\\
+
 
 \cvsection{Languages}
 
@@ -260,29 +247,26 @@ Software Engineer at BPCE Bank || 4x AWS Certified\textsuperscript{\textregister
 
 \cvsection{Education}
 
-\cvevent{IT Engineering}{Higher School Of Telecommunication}{Sept 2015 -- June 2018 }{}
-Specialty: Telecom Service Engineering, Cloud Engineering \hspace{5mm}\location{Tunisia}
+\cvevent{IT Engineering}{Higher School Of Communication \break
+\location{\textcolor{LightGrey}{Tunisia}}}{Sept 2015 -- June 2018}{}
+\item Specialty: Telecom Service Engineering
 
 \divider
 
-\cvevent{M.Sc.\ in Your Discipline}{Your University}{Sept 2001 -- June 2002}{}
+\cvevent{Theoretical Engineering Studies }{Preparatory Institute for Engineering Studies, IPEIT \break
+\location{\textcolor{LightGrey}{Tunisia}}}{Sept 2013 -- June 2015}{}
+\item Specialty: Mathematics and Physics, Ranked 135/2200 in the national contest
 
 \divider
 
-\cvevent{B.Sc.\ in Your Discipline}{Stanford University}{Sept 1998 -- June 2001}{}
-
-% \divider
-
-\cvsection{Referees}
-
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
-
+\cvevent{Scientific Baccalaureate}{Pioneer High School \break
+\location{\textcolor{LightGrey}{Tunisia}}}{Sept 2009 -- June 2013}{}
+\item Specialty: Mathematics, Grade: 16.56/20, Mention: Very good
 \divider
 
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
+\cvevent{Diploma of Oriental Music}{National Conservatory \break
+\location{\textcolor{LightGrey}{Tunisia}}}{Sept 2005 -- June 2010}{}
+\item Specialty: Tunisian Folklore, Violin
 
 
 \end{paracol}
