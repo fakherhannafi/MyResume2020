@@ -71,9 +71,13 @@
 
 \begin{document}
 
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+
+  
 \name{Fakher HANNAFI}
 \tagline{\textcolor{LightGrey}{
-Software Engineer at BPCE Bank || 4x AWS Certified}\textcolor{myBlack}{\textsuperscript{\textregistered}}
+Software Engineer at BPCE Bank}\textcolor{myBlack}{\textsuperscript{\textregistered}}
 \textcolor{Orange}{
 \begin{tikzpicture}
 \node [cloud, draw,cloud puffs=10,cloud puff arc=120, aspect=2, inner ysep=0.2em] {};
@@ -82,18 +86,20 @@ Software Engineer at BPCE Bank || 4x AWS Certified}\textcolor{myBlack}{\textsupe
 
 %% You can add multiple photos on the left or right
 \photoR{3cm}{photo_aws}
+
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
 \personalinfo{
-\item {\textcolor{orange}{\faCircle} 25 Years Old} \hspace{22.7mm} \location{Aix En Provence, France} 
- \hspace{9,5mm} \phone{+33-7-8491-4455}
+\printinfo{\faBirthdayCake}{25 years old} \hspace{22.7mm} \location{Aix En Provence, France} \email{fakher.hannafi@gmail.com} 
+ %\hspace{9,5mm} \phone{+33-7-8491-4455}
   %
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
  
-  \email{fakher.hannafi@gmail.com}
+  %\email{fakher.hannafi@gmail.com}
   \linkedin{linkedin.com/in/fakher-hannafi}
   \github{github.com/fakhrovski}
-
+  \homepage{medium.com/@fakhrovski}
+    \homepage{youracclaim.com/users/fakher-hannafi}
  
   %\mailaddress{}
   %\homepage{www.homepage.com/}
@@ -137,7 +143,7 @@ Software Engineer at BPCE Bank || 4x AWS Certified}\textcolor{myBlack}{\textsupe
 \begin{itemize}
 \item Deploy Data Science Models to Production Environments
 \item \textbf{Keywords:} Operational Excellence, Reliability, Monitoring, API/Batch Patterns, CI/CD, Containers
-\item \textbf{Technologies:} Anaconda, HDP 2.6.5, Artifactory, Elastic, Jenkins, XLR/XLD
+\item \textbf{Technologies:} Anaconda, HDP 2.6.5, Git Flow, Jenkins, Artifactory, Elastic, XLR/XLD
 \end{itemize}
 
 \divider
@@ -157,7 +163,7 @@ Software Engineer at BPCE Bank || 4x AWS Certified}\textcolor{myBlack}{\textsupe
 \newpage
 %\divider
 
-\cvevent{Upgrade Big Data Platform to HDP 3.1}{Infrastructure Engineer}{April 2019 -- 
+\cvevent{Upgrade Big Data Platform to HDP 3.1}{Infrastructure Engineer}{Jan 2020 -- 
 Ongoing}{}
 \begin{itemize}
 \item \textbf{Keyword:} containerization/virtualization, ESX, Filesystem, SAN, Disaster Recovery Plan, Availability, Fault Tolerance, SLA, Power BI, HDP 2.5.6
@@ -166,7 +172,7 @@ Ongoing}{}
 
 \divider
 
-\cvevent{Monitoring Tool}{Full Stack Developer | Devops Engineer}{April 2019 -- Ongoing}{}
+\cvevent{Monitoring Tool}{Full Stack Developer | Devops Engineer}{May 2018 -- March 2019}{}
 \item Design, develop, test, deploy and document an agile Dashboard that visualizes KPIs of Orange webmail
 \item \textbf{Keyword:} NodeJS, VueJs, JEST, Bootstrap, Rest API, Websocket, Git, Openshift, Jenkins, Kanban
 \medskip
@@ -179,8 +185,8 @@ Ongoing}{}
 
 \wheelchart{1.5cm}{0.5cm}{%
   6/8em/accent!30/{Netflix and Chill},
-  3/8em/accent!40/Networking with AWS Architects,
-  8/8em/accent!60/Table Tennis,
+  3/8em/accent!40/Table Tennis,
+  8/8em/accent!60/Networking,
   2/10em/accent/Coding,
   5/6em/accent!20/Violin
 }
@@ -205,7 +211,7 @@ Ongoing}{}
 
 \cvachievement{\faTrophy}{Technical Certifications}{}
 \includegraphics[width=0.1 \textwidth]{clf} \includegraphics[width=0.1 \textwidth]{dva} \includegraphics[width=0.1 \textwidth]{saa} \includegraphics[width=0.1 \textwidth]{soa}\\
-
+\includegraphics[width=0.1 \textwidth]{jenkins}\includegraphics[width=0.11 \textwidth]{azure-900.png}
 \divider
 
 \cvachievement{\faTrophy}{Non Technical Certifications}{}
@@ -213,23 +219,27 @@ Ongoing}{}
 \hspace{5mm}\includegraphics[width=0.12 \textwidth]{toeic}
 
 \divider\\
-\cvachievement{\faTrophy}{National Diploma of Music}{Music Teacher, Violin, Piano}
+\cvachievement{\faTrophy}{National Diploma of Music}{Teaching Violin and piano}
 
-\cvsection{Strengths}
+\cvsection{SKILLS}
 
 \cvtag{Lifelong Learner} \cvtag{Highly Motivated}\\
-\cvtag{Autonomous} \cvtag{Challenger}
 
 \divider\smallskip\\
 
-\cvtag{Web}\cvtag{Cloud}\cvtag{Data}\cvtag{Devops}\\
-
-\cvtag{Agile}\cvtag{Scrum}\cvtag{ITIL}\cvtag{ITSM}\\
+\cvtag{Devops}\cvtag{Cloud}\cvtag{Data}\cvtag{Web}\\
 
 \divider\smallskip\\
-\cvtag{Angular}\cvtag{Node.js}\cvtag{Python}\cvtag{Powershell}\cvtag{AWS}\cvtag{Jenkins}\cvtag{Ansible}\cvtag{Linux}\cvtag{Docker}\cvtag{Elastic}\cvtag{Oracle}\cvtag{Power BI}\cvtag{Grafana}\\
 
+\cvtag{CI/CD}\cvtag{IaC}\cvtag{VCS}\cvtag{Planning}\cvtag{Testing}\cvtag{Monitoring}\cvtag{Containers}\cvtag{Serverless}\\
 
+\divider\smallskip\\
+
+\cvtag{Angular}\cvtag{Node.js}\cvtag{Python}\cvtag{Powershell}\cvtag{Linux}\cvtag{Jenkins}\cvtag{Ansible}\cvtag{Terraform}\cvtag{Docker}\cvtag{Elastic}\cvtag{Power BI}\cvtag{Grafana}\cvtag{Hadoop}\cvtag{Spark}\cvtag{Oracle}\cvtag{Vtom}\\
+\divider\smallskip\\
+\cvtag{Scrum}\cvtag{ITIL4}\\
+
+\break
 \cvsection{Languages}
 
 \cvskill{Frensh}{5}
@@ -247,7 +257,7 @@ Ongoing}{}
 
 \cvsection{Education}
 
-\cvevent{IT Engineering}{Higher School Of Communication \break
+\cvevent{IT Engineering}{Higher School Of Communication - Sup'COM
 \location{\textcolor{LightGrey}{Tunisia}}}{Sept 2015 -- June 2018}{}
 \item Specialty: Telecom Service Engineering
 
@@ -255,18 +265,22 @@ Ongoing}{}
 
 \cvevent{Theoretical Engineering Studies }{Preparatory Institute for Engineering Studies, IPEIT \break
 \location{\textcolor{LightGrey}{Tunisia}}}{Sept 2013 -- June 2015}{}
-\item Specialty: Mathematics and Physics, Ranked 135/2200 in the national contest
+\item Specialty: Mathematics and Physics \\ Ranked 135/2200 in the national contest
 
 \divider
 
 \cvevent{Scientific Baccalaureate}{Pioneer High School \break
 \location{\textcolor{LightGrey}{Tunisia}}}{Sept 2009 -- June 2013}{}
-\item Specialty: Mathematics, Grade: 16.56/20, Mention: Very good
+\item Specialty: Mathematics, Grade: 16.56/20 \\
+Mention: Very good
+
 \divider
 
 \cvevent{Diploma of Oriental Music}{National Conservatory \break
 \location{\textcolor{LightGrey}{Tunisia}}}{Sept 2005 -- June 2010}{}
-\item Specialty: Tunisian Folklore, Violin
+\item Specialty: Tunisian Folklore, Violin \\
+Mention: Good
+
 
 
 \end{paracol}

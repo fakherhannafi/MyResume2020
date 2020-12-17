@@ -1,0 +1,302 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.2, 11 February 2020) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{Orange}{HTML}{FF8C00}
+\definecolor{myRed}{HTML}{ff0000}
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{myBlack}{HTML}{000000}
+\colorlet{heading}{myBlack}
+\colorlet{accent}{Orange}
+\colorlet{emphasis}{myBlack}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+\usetikzlibrary{shapes}
+
+
+\begin{document}
+
+%\makecvfooter
+%  {\today}
+%  {Resume}
+%  {\thepage}
+  
+\name{Fakher HANNAFI}
+\tagline{\textcolor{LightGrey}{
+ Consultant Cloud/Data Chez Devoteam Revolve}}
+
+%% You can add multiple photos on the left or right
+\photoR{3cm}{photo_aws}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+\personalinfo{
+\printinfo{\faBirthdayCake}{26 ans} \hspace{24mm} \location{Grand Paris, France} 
+ \hspace{9,5mm} \phone{+33-7-8491-4455}
+  %
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+ 
+  \email{fakher.hannafi@gmail.com}
+  \linkedin{linkedin.com/in/fakher-hannafi}
+  \github{github.com/fakhrovski}
+
+ 
+  %\mailaddress{}
+  %\homepage{www.homepage.com/}
+  %\twitter{@fakhrovski}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Expérience}
+
+\cvevent{Consultant Cloud/DATA }{\textcolor{myBlack}{GRTGAZ} \hspace{7,7cm}\includegraphics[width=0.05 \textwidth]{440px-Logo_GRT_Gaz.svg.png}}{Septembre 2020 -- Décembre 2020}{}
+\divider
+
+\cvevent{Tech Lead }{\textcolor{myBlack}{Groupe BPCE} \hspace{6,8cm}\includegraphics[width=0.07 \textwidth]{bpce}}{Avril 2019 -- Octobre 2020}{}
+
+\divider
+
+\cvevent{Développeur Web}{\textcolor{LightGrey}{ORANGE} \hspace{7.8cm}\includegraphics[width=0.03 \textwidth]{orange}}{Mai 2018 -- Novembre 2018}{}
+%\begin{itemize}
+%\item Développeur Web
+%\item Ingénieur Devops
+%\end{itemize}
+
+\cvsection{Projets}
+
+\cvevent{Remise en Conformité des Environnements Data Science sur AWS}{Consultant DataOps}{Octobre 2020 -- Décembre 2020}{}
+\begin{itemize}
+\item Mettre en place un cadre de gouvernance sur les environnements Data Science tout en respectant les exigences sécurité de GRTGAZ et les recommandations/bonnes pratiques de AWS
+\item \textbf{Mots clés:} IAM, Détection, Protection de l'infrastructure, Protection des données, Gestion des incidents
+\item \textbf{Technologies:} Cloud Custodian, Inspector, Config, SSM, Endpoints, VPC
+\end{itemize}
+
+\divider
+
+\cvevent{Industrialiser les modèles de Data Science dans le Groupe}{Chef de Projet/Architecte DATA}{Feb 2020 -- Octobre 2020}{}
+\begin{itemize}
+\item Déployer les modèles de Data Science dans les environnements de production.
+\item \textbf{Mots clés:} Excellence opérationnelle, Monitoring, API/Batch Patterns, CI/CD, Containers
+\item \textbf{Technologies:} Anaconda, Hortonworks Data Platform, Artifactory, Elastic, Jenkins, XLR/XLD
+\end{itemize}
+
+\divider
+\cvevent{Migration de la plateforme Big Data Groupe}{Ingénieur Infrastructure}{Janv 2020 -- 
+Octobre 2020}{}
+\begin{itemize}
+\item \textbf{Mots Clés:} conteneurisation/virtualisation, ESX, SAS, MySQL, PRA/PCA, Availability, Fault Tolerance, SLA, Power BI, HDP 2.5.6
+\medskip
+\end{itemize}
+
+\divider
+\cvevent{Outillage pour l'automatisation}{Développeur Web | Développeur Data}{Avril 2019 -- Octobre 2020}{}
+\begin{itemize}
+\item Développer et déployer 3 outils internes de bout en bout.
+\item \textbf{Technologies:} Angular 8, Nodejs 10, Oracle 12c, PowerShell, Power BI, Jenkins
+\end{itemize}
+\medskip
+
+
+\newpage
+
+\cvevent{Migration des données vers le cloud AWS}{AWS Cloud Engineer}{Octobre 2019 -- Décembre 2019}{}
+\item Homologation de la chaine de traitement de données. Vérification de la robustesse et la performance de la solution.
+\item \textbf{Technologies:} S3, Lambda, Athena, Cloudwatch, IAM, STS, SNS
+\medskip
+
+\cvevent{Outil de Monitoring}{Développeur Full Stack | Ingénieur Devops}{Avril 2019 -- En cours}{}
+\item Concevoir, développer, tester, déployer et documenter un outil de supervision qui permet de sortir des KPIs de la messagerie professionnelle Orange
+\item \textbf{Mots Clés:} NodeJS, VueJs, JEST, Bootstrap, Rest API, Websocket, Git, Openshift, Jenkins, Kanban
+\medskip
+
+\cvsection{Centres d'intérêt}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+
+\wheelchart{1.5cm}{0.5cm}{%
+  6/8em/accent!30/{Séries télévisées},
+  3/8em/accent!40/Tennis de table,
+  8/8em/accent!60/Musique,
+  2/10em/accent/Coding,
+  5/6em/accent!20/Networking
+}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the current column
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Biographie}
+
+
+\begin{quote}
+\textcolor{LightGrey}{``The more I live, the more I learn. The more I learn, the more I realize, the less I know''}
+\end{quote}
+
+
+\cvsection{Certifications}
+
+\cvachievement{\faTrophy}{Certifications techniques}{}
+
+
+\includegraphics[width=0.1 \textwidth]{clf} \includegraphics[width=0.1 \textwidth]{dva} \includegraphics[width=0.1 \textwidth]{saa} \includegraphics[width=0.1 \textwidth]{soa}\\
+
+\includegraphics[width=0.1 \textwidth]{azure-900.png}
+\includegraphics[width=0.1\textwidth]{azure-administrator-associate.png}
+\includegraphics[width=0.1\textwidth]{azure-developer-associate-600x600.png}
+\includegraphics[width=0.1\textwidth]{CERT-Expert-DevOps-Engineer-600x600.png}
+\includegraphics[width=0.1\textwidth]{Terraform-Associate-Badge.png}
+\includegraphics[width=0.1\textwidth]{ckad_from_cncfsite.png}
+\includegraphics[width=0.1\textwidth]{aceAssociatetBadgeArtboard_1.png}
+\includegraphics[width=0.1\textwidth]{CERT-Associate-Data-Analyst-600x600.png}
+\includegraphics[width=0.1\textwidth]{jenkins}
+
+\divider
+
+
+\cvachievement{\faTrophy}{Certifications non techniques}{}
+\includegraphics[width=0.16 \textwidth]{itil} \includegraphics[width=0.06 \textwidth]{psm}
+\hspace{5mm}\includegraphics[width=0.12 \textwidth]{toeic}
+
+\divider\\
+\cvachievement{\faTrophy}{Diplôme national de Musique}{Professeur, Violoniste, Pianiste}
+
+\cvsection{Compétences}
+
+\cvtag{Autonome} \cvtag{Challenger}\cvtag{Proactif}\\
+\cvtag{Apprenant rapide} 
+
+
+\divider\smallskip\\
+\cvtag{Data}\cvtag{Devops}\cvtag{Cloud}\cvtag{Web}\\
+
+\divider\smallskip\\
+
+\cvtag{CI/CD}\cvtag{IaC}\cvtag{VCS}\cvtag{Planning}\cvtag{Testing}\cvtag{Monitoring}\cvtag{Containers}\cvtag{Serverless}\\
+
+\divider\smallskip\\
+
+\cvtag{Angular}\cvtag{Node.js}\cvtag{Python}\cvtag{Powershell}\cvtag{Vtom}\cvtag{Redhat}\cvtag{Jenkins}\cvtag{Ansible}\cvtag{Terraform}\cvtag{Docker}\cvtag{Elasticsearch}\cvtag{Power BI}\cvtag{Grafana}\cvtag{Hadoop}\cvtag{Spark}\cvtag{Oracle}\\
+\divider\smallskip\\
+\cvtag{Scrum}\cvtag{ITIL4}\\
+
+\break
+\cvsection{Langages}
+
+\cvskill{Français}{5}
+\divider
+
+\cvskill{Arabe}{5}
+\divider
+
+\cvskill{Anglais}{4}
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vpsace etc to make ajustments.
+\medskip
+
+\cvsection{Cursus Scolaire}
+
+\cvevent{IT Engineering}{Ecole supérieur de communication de Tunis, Sup'COM \break
+\location{\textcolor{LightGrey}{Tunisia}}}{Sept 2015 -- Juin 2018}{}
+\item Spécialité: Service Télécom Cloud
+
+\divider
+
+\cvevent{Etudes d'ingénieur }{Institut Préparatoire des Etudes d'Ingénieurie à Tunis, IPEIT \break
+\location{\textcolor{LightGrey}{Tunisie}}}{Sept 2013 -- Juin 2015}{}
+\item Spécialité: Mathématiques & Physiques \\ Rang: 135/2200 dans le concours national
+
+\divider
+
+\cvevent{Baccalauréat Scientifique}{Lycée Pilote Kairouan \break
+\location{\textcolor{LightGrey}{Tunisie}}}{Sept 2009 -- Juin 2013}{}
+\item Spécialité: Mathématiques, Moyenne: 16.56/20 \\
+Mention: Très Bien
+
+\divider
+
+\cvevent{Diploma of Oriental Music}{National Conservatory \break
+\location{\textcolor{LightGrey}{Tunisia}}}{Sept 2005 -- Juin 2010}{}
+\item Spécialité: Folklore tunisien, oriental \\
+Mention: Bien
+
+
+
+\end{paracol}
+
+
+
+\end{document}

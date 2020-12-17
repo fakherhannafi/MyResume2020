@@ -145,6 +145,16 @@
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
+
+% make footer
+
+%\newcommand*{\makecvfooter}[3]{%
+%  \fancyfoot{}
+%  \fancyfoot[L]{\footerstyle{#1}}
+%  \fancyfoot[C]{\footerstyle{#2}}
+%  \fancyfoot[R]{\footerstyle{#3}}
+%}
+
 % v1.2: Support for multiple photos
 \newlength{\altacv@photos@width}
 \newlength{\altacv@photo@diam@left}
