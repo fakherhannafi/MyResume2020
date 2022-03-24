@@ -21,7 +21,7 @@
 % \documentclass[10pt,a4paper,academicons]{altacv}
 
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
-% \documentclass[10pt,a4paper,normalphoto]{altacv}
+\documentclass[10pt,a4paper,normalphoto]{altacv}
 
 \documentclass[10pt,a4paper,ragged2e]{altacv}
 
@@ -78,14 +78,14 @@
   
 \name{Fakher HANNAFI}
 \tagline{\textcolor{LightGrey}{
- Consultant Cloud/Data Chez Devoteam Revolve}}
+Architecte Data/ML || 4 ans d'Expérience }}
 
 %% You can add multiple photos on the left or right
 \photoR{3cm}{photo_aws}
-% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+%\photoL{2.5cm}{Yacht_High,Suitcase_High}
 \personalinfo{
-\printinfo{\faBirthdayCake}{26 ans} \hspace{24mm} \location{Grand Paris, France} 
- \hspace{9,5mm} \phone{+33-7-8491-4455}
+\printinfo{\faBirthdayCake}{27 ans} \hspace{24mm} \location{Grand Paris, France} 
+ %\hspace{9,5mm} \phone{+33-7-8491-4455}
   %
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
@@ -94,6 +94,7 @@
   \linkedin{linkedin.com/in/fakher-hannafi}
   \github{github.com/fakherhannafi}
   \homepage{www.fakher-hannafi.com}
+  \homepage{fakherhannafi.medium.com/}
 
  
   %\mailaddress{}
@@ -116,14 +117,23 @@
 \begin{paracol}{2}
 \cvsection{Expérience}
 
-\cvevent{Consultant Cloud/DATA }{\textcolor{myBlack}{GRTGAZ} \hspace{7cm}\includegraphics[width=0.07 \textwidth]{440px-Logo_GRT_Gaz.svg.png}}{Octobre 2020 -- Aujourd'hui}{}
+\cvevent{Architecte Data}{\textcolor{myBlack}{BPI France} \hspace{6.6cm}\includegraphics[width=0.08 \textwidth]{bpifrance.png}}{Décembre 2021 -- Aujourd'hui}{}
 \divider
 
-\cvevent{Tech Lead }{\textcolor{myBlack}{Groupe BPCE} \hspace{6,2cm}\includegraphics[width=0.09 \textwidth]{bpce}}{Avril 2019 -- Septembre 2020}{}
+\cvevent{Architecte Data}{\textcolor{myBlack}{ENGIE} \hspace{7.5cm}\includegraphics[width=0.07 \textwidth]{engie.png}}{Octobre 2021 -- Décembre 2021}{}
+\divider
+
+\cvevent{AWS Data/ML Engineer}{\textcolor{myBlack}{GRTGAZ} \hspace{7cm}\includegraphics[width=0.07 \textwidth]{440px-Logo_GRT_Gaz.svg.png}}{Octobre 2020 -- Octobre 2021}{}
+\divider
+
+\cvevent{Community Builder, Speaker, Blogger}{\textcolor{myBlack}{Devoteam Revolve} \hspace{3.6cm}\includegraphics[width=0.18 \textwidth]{devoteam_revolve.png}}{Octobre 2020 -- Décembre 2021}{}
+\divider
+
+\cvevent{Tech Lead Data}{\textcolor{myBlack}{Groupe BPCE} \hspace{6,2cm}\includegraphics[width=0.09 \textwidth]{bpce}}{Avril 2019 -- Septembre 2020}{}
 
 \divider
 
-\cvevent{Développeur Web}{\textcolor{LightGrey}{ORANGE FR} \hspace{7.1cm}\includegraphics[width=0.037 \textwidth]{orange}}{Mai 2018 -- Novembre 2018}{}
+\cvevent{Développeur Full stack}{\textcolor{LightGrey}{ORANGE FR} \hspace{7.1cm}\includegraphics[width=0.037 \textwidth]{orange}}{Mai 2018 -- Mars 2019}{}
 %\begin{itemize}
 %\item Développeur Web
 %\item Ingénieur Devops
@@ -131,7 +141,24 @@
 
 \cvsection{Projets}
 
-\cvevent{Prévisions des consommations de Gaz PRECO}{Consultant MLOPS - GRTGAZ}{Janvier 2021 -- Aujourd'hui}{}
+\cvevent{Design, Build et Run des Pipelines Data}{Architecte Data - BPI France}{Décembre 2021 -- Aujourd'hui}{}
+\begin{itemize}
+    \item Concevoir, Développer et Monitorer des pipelines Data pour le comptoir des données Client.
+    \item \textbf{Mots clés: } Data Ingestion, Data Orchestration, Data Quality, Data Monitoring
+    \item \textbf{Technologies:} Gitlab, Glue, Spark, Python, Airflow, Cloudwatch, Datadog, Jenkins.
+\end{itemize}
+\divider
+
+\cvevent{Architecture Cloud, Governance Data, Data Pipelines}{Architecte Data AWS - ENGIE}{Octobre 2021 -- Décembre 2021}{}
+\begin{itemize}
+    \item Design et Implémentation d'un MVP d'une solution de Data Gouvernance basée sur le le software Collibra.
+    \item Support Adoption de la plateforme CDH, PowerBI pour toutes les entités/BUs du groupe.
+    \item \textbf{Mots clés: } Data Gouvernance, Data Quality, Ontology
+    \item \textbf{Technologies:} Git, Cloudformation, EC2, Palantir Foundry, CDH
+\end{itemize}
+\divider
+
+\cvevent{Prévisions des consommations de Gaz PRECO}{Architecte Data/ML - GRTGAZ}{Janvier 2021 -- Aujourd'hui}{}
 \begin{itemize}
 \item Design et implémentation d'une architecture d'une solution ML pour assurer le le déploiement et le monitoring des modèles PRECO
 \item \textbf{Mots clés: } Data Validation, Feature Engineering, Experimentation Tracking, Data Versioning, Model Monitoring, Feedback loop
@@ -139,11 +166,17 @@
 \end{itemize}
 \divider
 
-\cvevent{Remise en Conformité des Environnements Data Science sur AWS}{Consultant DataOps - GRTGAZ}{Octobre 2020 -- Décembre 2020}{}
+\cvevent{Remise en Conformité des Environnements Data Science sur AWS}{Consultant Cloud/Data - GRTGAZ}{Octobre 2020 -- Décembre 2020}{}
 \begin{itemize}
 \item Mettre en place un cadre de gouvernance sur les environnements Data Science tout en respectant les exigences sécurité de GRTGAZ et les recommandations/bonnes pratiques de AWS
 \item \textbf{Mots clés:} IAM, Détection, Protection de l'infrastructure, Protection des données, Gestion des incidents
 \item \textbf{Technologies:} Cloud Custodian, AWS Inspector, Config, SSM,EC2, VPC Endpoints, Cloudwatch
+\end{itemize}
+\divider
+
+\cvevent{Community Builder, Speaker}{Consultant Data AWS - Devoteam Revolve}{Janvier 2021 -- Aujourd'hui}{}
+\begin{itemize}
+    \item Help junior consultants onboard on AWS and Data, Speaker in Salon Big Data in 2021 Edition,  Write Blogs in Enterprise Blog Site, Build Data Offer Proposition for the company.
 \end{itemize}
 \divider
 
@@ -153,7 +186,7 @@
 \medskip
 
 \divider
-\cvevent{Pilote d'infrastructure d'une plateforme de sécurisation d'accès à la donnée avec DENODO}{Tech Lead - BPCE}{Mai 2020 -- Octobre 2020}{}
+\cvevent{Pilote d'infrastructure d'une plateforme de sécurisation d'accès à la donnée avec DENODO}{Architecte Data - BPCE}{Mai 2020 -- Octobre 2020}{}
 \begin{itemize}
 \item Déploiement d'une solution de Data virtualisation DENODO qui permet essentiellement de sécuriser les accès à la donnée au sein du groupe bancaire BPCE
 \item \textbf{Mots clés:} Haute Disponibilité, Centralisation des accès, Business Continuity Plan, Gouvernance de la donnée  
@@ -162,7 +195,7 @@
 \end{itemize}
 \divider
 
-\cvevent{Industrialiser les modèles de Data Science dans le Groupe}{Chef de Projet - Architecte DATA}{Feb 2020 -- Octobre 2020}{}
+\cvevent{Industrialiser les modèles de Data Science dans le Groupe}{Chef de Projet - Architecte DATA- BPCE}{Feb 2020 -- Octobre 2020}{}
 \begin{itemize}
 \item Déployer les modèles de Data Science dans les environnements de production Big Data.
 \item \textbf{Mots clés:} Excellence opérationnelle, Monitoring, API/Batch Patterns, CI/CD, Containers
@@ -171,7 +204,7 @@
 \end{itemize}
 
 \divider
-\cvevent{Migration de la plateforme Big Data Groupe}{Ingénieur Infrastructure}{Janv 2020 -- 
+\cvevent{Migration de la plateforme Big Data Groupe}{Ingénieur Infrastructure - BPCE}{Janv 2020 -- 
 Octobre 2020}{}
 \begin{itemize}
 \item Migration de la plateforme Big DATA Groupe de HDP 2.5 vers HDP 3.1
@@ -179,14 +212,14 @@ Octobre 2020}{}
 \end{itemize}
 
 \divider
-\cvevent{Outillage pour l'automatisation}{Développeur Web | Développeur Data}{Avril 2019 -- Octobre 2020}{}
+\cvevent{Outillage pour l'automatisation}{Développeur Web | Développeur Data - BPCE}{Avril 2019 -- Octobre 2020}{}
 \begin{itemize}
 \item Développer et déployer 3 outils internes de bout en bout.
 \item \textbf{Technologies:} Angular 8, Nodejs 10, Oracle 12c, PowerShell, Power BI, Jenkins
 \end{itemize}
 \medskip
 
-\cvevent{Outil de Monitoring}{Développeur Full Stack | Ingénieur Devops}{Mai 2018 -- Mars 2019}{}
+\cvevent{Outil de Monitoring}{Développeur Full Stack | Ingénieur Devops - Orange}{Mai 2018 -- Mars 2019}{}
 \item Concevoir, développer, tester, déployer et documenter un outil de supervision qui permet de sortir des KPIs de la messagerie professionnelle Orange
 \item \textbf{Mots Clés:} NodeJS, VueJs, JEST, Bootstrap, Rest API, Websocket, Git, Openshift, Jenkins, Kanban
 \medskip
@@ -217,7 +250,7 @@ Octobre 2020}{}
 
 
 \begin{quote}
-\textcolor{LightGrey}{``The more I live, the more I learn. The more I learn, the more I realize, the less I know''}
+\textcolor{LightGrey}{``Passionné par la Data et le DevOps dans le Cloud. AWS, Azure, Hashicorp... avide de nouvelles connaissances, 22 certifications professionnelles en 2 ans! Intéressé par les sujets d'industrialisation Data Science et au ML Ops, je suis aussi prof de musique, violoniste et amateur du tennis de table.''}
 \end{quote}
 
 \cvsection{Compétences}
@@ -225,25 +258,22 @@ Octobre 2020}{}
 \cvtag{Autonome} \cvtag{Challenger}\cvtag{Proactif}\\
 \cvtag{Apprenant rapide} 
 
-
 \divider\smallskip\\
-\cvtag{Data}\cvtag{Devops}\cvtag{Cloud}\cvtag{Web}\\
-
-\divider\smallskip\\
-
-\cvtag{CI/CD}\cvtag{IaC}\cvtag{VCS}\cvtag{Planning}\cvtag{Testing}\cvtag{Monitoring}\cvtag{Containers}\cvtag{Serverless}\\
+\cvtag{High Availability}\cvtag{Fault Tolerance}\cvtag{Scalability}\cvtag{Operational Excellence}\cvtag{Performance}\cvtag{Security}\\
+\cvtag{SQL} \cvtag{NoSQL}\cvtag{Spark}\cvtag{Python}\cvtag{Data warehousing}\cvtag{Data Lake} \cvtag{Data Streaming} \cvtag{Cloud Data Platforms} \cvtag{Data Virtualization} \cvtag{Data Security}\cvtag{Data Integration}\cvtag{Data Ingestion} \cvtag{ML Operations} \\\cvtag{Elastic}\cvtag{MongoDB}\cvtag{Grafana}\cvtag{Denodo}\cvtag{Power BI}\cvtag{Splunk}\cvtag{Datadog}\cvtag{Hadoop}\cvtag{Kafka}\cvtag{Oracle}\cvtag{Powershell}\cvtag{Redhat}\cvtag{Jenkins}\cvtag{Ansible}\cvtag{Terraform}
 
 \divider\smallskip\\
 
-\cvtag{Angular}\cvtag{Node.js}\cvtag{Python}\cvtag{Powershell}\cvtag{Redhat}\cvtag{Jenkins}\cvtag{Ansible}\cvtag{Terraform}\cvtag{Docker}\cvtag{Elasticsearch}\cvtag{Power BI}\cvtag{Grafana}\cvtag{Hadoop}\cvtag{Spark}\cvtag{Oracle}\\
+\cvtag{CI/CD}\cvtag{Terraform}\cvtag{Vault}\cvtag{Git}\cvtag{Kubernetes}\cvtag{Docker}
+
 \divider\smallskip\\
-\cvtag{Scrum}\cvtag{ITIL4}
+\cvtag{Scrum}\cvtag{ITIL4}\cvtag{SAFE}
 
 \cvsection{Certifications}
 
 \cvachievement{\faTrophy}{Certifications techniques}{}
 
-
+ \includegraphics[width=0.105 \textwidth]{devops} \includegraphics[width=0.105 \textwidth]{data-analytics.png}
 \includegraphics[width=0.1 \textwidth]{clf} \includegraphics[width=0.1 \textwidth]{dva} \includegraphics[width=0.1 \textwidth]{saa} \includegraphics[width=0.1 \textwidth]{soa}\\
 
 \includegraphics[width=0.105\textwidth]{azure-solutions-architect-expert-600x600.png}
